@@ -1,0 +1,39 @@
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:thecodingmachine/definition-discovery.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:thecodingmachine/container-discovery.git"
+        }
+    ],
+    "name": "thecodingmachine/yaco-factory",
+    "type": "library",
+    "description": "This package contains a factory for the YACO container.",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "TheCodingMachine\\Yaco\\Discovery\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TheCodingMachine\\Yaco\\Discovery\\": "tests/"
+        }
+    },
+    "require": {
+        "thecodingmachine/yaco": "^1.0",
+        "thecodingmachine/container-discovery": "dev-master",
+        "container-interop/definition-discovery": "dev-master",
+        "symfony/filesystem": "~2.3 | ~3.0",
+        "puli/manager": "~1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.5",
+        "puli/cli": "~1.0",
+        "puli/composer-plugin": "~1.0"
+    },
+    "minimum-stability": "dev"
+}
