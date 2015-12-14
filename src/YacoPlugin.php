@@ -20,9 +20,13 @@ class YacoPlugin implements PuliPlugin
         $puli->getEventDispatcher()->addListener(PuliEvents::GENERATE_FACTORY, function() use ($puli) {
             // Function called just before the factory class is written.
             // Idea: let's delete the compiled container file. And let's recreate it only when needed!
-            $puli->getLogger()->info("Bindings updated. Removing outdated container.");
             $filesystem = new Filesystem();
             $filesystem->remove(YacoFactory::getContainerFilePath());
+
+            $logger = $puli->getLogger();
+            if ($logger) {
+                $puli->getLogger()->info("Bindings updated. Removing outdated container.");
+            }
         });
     }
 }

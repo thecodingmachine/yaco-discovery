@@ -1,6 +1,13 @@
 {
     "version": "1.0",
     "name": "thecodingmachine/yaco-factory",
+    "bindings": {
+        "0d39e02b-d4c3-4051-8984-ee44e6998837": {
+            "_class": "Puli\\Discovery\\Binding\\ClassBinding",
+            "class": "TheCodingMachine\\Yaco\\Discovery\\YacoFactory",
+            "type": "container-interop/ContainerFactories"
+        }
+    },
     "config": {
         "bootstrap-file": "vendor/autoload.php"
     },
