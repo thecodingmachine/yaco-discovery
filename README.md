@@ -1,4 +1,4 @@
-**Abandonned: this package is abandonned as "definition-discovery" and "definition-interop" as been phased out in favor of "container-interop/service-provider"
+**Abandonned: this package is abandonned as "definition-discovery" and "definition-interop" as been phased out in favor of "container-interop/service-provider"**
 
 Yaco Discovery package
 ======================
